@@ -1,5 +1,10 @@
+import { Toaster } from "react-hot-toast";
+
 export default function Home() {
   return (
-    <main className="flex items-center justify-center h-screen">test</main>
+    <main className="">
+      <Toaster />
+      asd
+    </main>
   );
 }
