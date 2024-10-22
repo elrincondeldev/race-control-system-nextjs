@@ -12,3 +12,31 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Participant {
+  id        String   @id @default(cuid())
+  category  String
+  contestantName String
+  managerName String
+  license String
+  nif String
+  email String
+  telephone String
+  driverName String
+  driverLastName String
+  driverLicense String
+  driverNif String
+  driverProvince String
+  driverCountry String
+  driverBirthDate String
+  driverTelephone String
+  chasis String
+  dorsal String
+  firstMotor String
+  secondMotor String
+  transponder Boolean
+  transponderNumber String
+  contestantLicenseFile String
+  driverLicenseFile String
+  paidJustificationFile String
+}
